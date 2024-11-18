@@ -99,7 +99,6 @@
     text-align: center;
     gap: 0;
     color: var(--color-text); 
-    text-align: left;
     font-family: 'Reckless Neue';
 }
 
@@ -123,7 +122,7 @@
 .data-event > .data-description {
     color: var(--color-text);
     font-family: 'Reckless Neue';
-    text-align: left;
+    text-align: center;
     font-size: 1rem;
 }
 
