@@ -1,8 +1,6 @@
 let eventData = [];
 
 
-const token = process.env.API_TOKEN
-
 async function dateEvents(apiUrl, token) {
 
     const response = await fetch(apiUrl, {

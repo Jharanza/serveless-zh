@@ -7,7 +7,6 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: 'API_TOKEN is missing!' });
     }
 
-    console.log('API_TOKEN:', process.env.API_TOKEN); 
 
     try {
         const response = await fetch(apiUrl, {
