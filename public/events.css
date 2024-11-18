@@ -280,7 +280,7 @@
 
     .data-event > .data-description {
         max-width: 300px;
-        text-align: left;
+        text-align: center;
         font-size: 0.6rem;
         padding: 0 10px;
     }
