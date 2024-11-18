@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="calendar.css">
+  <link rel="stylesheet" href="events.css">
+</head>
+<body>
+  <main class="main">
+    <section class="calendar-container">
+        <div class="calendar-header">
+          <button id="prevMonth" onclick="changeMonth(-1)">
+            <img src="./utils/icons/less-than.svg" alt="<" class="btn-change">
+          </button>
+          <h2 id="monthYear"></h2>
+          <button id="nextMonth" onclick="changeMonth(1)">
+            <img src="./utils/icons/greater-than.svg" alt=">" class="btn-change">
+          </button>
+        </div>
+        <div class="calendar">
+          <div class="days" id="days"></div>
+        </div>
+      </section>
+      <section class="events">
+        <div class="events-container">
+            <!-- <div class="eventday" id="eventDay"></div> -->
+            <div id="eventList"></div>
+        </div>
+      </section>   
+  </main>
+  <script src="eventos.js"></script>
+  <script src="calendar.js"></script>
+  <!-- <script src="connection.js"></script> -->
+</body>
+</html>
