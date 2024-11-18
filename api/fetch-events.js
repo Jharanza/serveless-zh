@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-    const apiUrl = 'http://localhost:3000/api/v2/collections/672bd0fda2167383e4d01e39/items';
+    const apiUrl = 'https://api.webflow.com/v2/collections/672bd0fda2167383e4d01e39/items';
     const token = process.env.API_TOKEN; 
 
     try {
