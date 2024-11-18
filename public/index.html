@@ -34,6 +34,27 @@
         </div>
       </section>   
   </main>
+  <script>
+    (() => {
+      // Send the initial height to the parent
+      const sendHeight = () => {
+        const height = document.body.scrollHeight;
+        console.log("Sending height:", height);
+        window.parent.postMessage({ type: "iframeHeight", height }, "*");
+      };
+
+      // Observe changes in the DOM to update height dynamically
+      const observer = new MutationObserver(() => sendHeight());
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+
+      // Send initial height when the iframe loads
+      window.addEventListener("load", sendHeight);
+    })();
+  </script>
   <script src="eventos.js"></script>
   <script src="calendar.js"></script>
   <!-- <script src="connection.js"></script> -->
