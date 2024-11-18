@@ -142,7 +142,7 @@
 .data-event > .data-description h2,
 .data-event > .data-description h1
 {
-    border: 5px 0;
+    margin: 5px 0;
 }
 
 
