@@ -1,6 +1,11 @@
 export default async function handler(req, res) {
     const apiUrl = 'https://api.webflow.com/v2/collections/672bd0fda2167383e4d01e39/items';
-    const token = process.env.API_TOKEN; 
+    const token = process.env.API_TOKEN;
+
+    if (!process.env.API_TOKEN) {
+        console.error('API_TOKEN is missing!');
+        return res.status(400).json({ error: 'API_TOKEN is missing!' });
+    }
 
     console.log('API_TOKEN:', process.env.API_TOKEN); 
 
