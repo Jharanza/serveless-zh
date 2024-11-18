@@ -3,11 +3,6 @@ let eventData = [];
 
 const token = process.env.API_TOKEN
 
-if (!process.env.API_TOKEN) {
-    console.error('API_TOKEN is missing!');
-    return res.status(400).json({ error: 'API_TOKEN is missing!' });
-}
-
 async function dateEvents(apiUrl, token) {
 
     const response = await fetch(apiUrl, {
