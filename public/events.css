@@ -104,12 +104,12 @@
 
 .data-event > p {
     display: block;
-    text-align: center;
     line-height: 1;
     margin: 5px 0;
     font-size: 1.5rem;
     color: var(--color-text); 
     font-family: 'Reckless Neue';
+    text-align: center;
 }
 
 .data-event > .title-place {
@@ -127,7 +127,10 @@
 }
 
 .data-description > ul {
+    line-height: 1.3;
     list-style: none;
+    text-align: center;
+
 }
 
 
