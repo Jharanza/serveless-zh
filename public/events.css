@@ -145,6 +145,15 @@
     margin: 5px 0;
 }
 
+.no-events-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Voyage';
+    font-size: 1.2rem;
+}
+
 
 /* ==================================================== */
 
