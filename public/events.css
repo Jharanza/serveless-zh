@@ -147,11 +147,12 @@
 
 .no-events-message {
     width: 100%;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Voyage';
-    font-size: 1.2rem;
+    font-size: 2.5rem;
 }
 
 
