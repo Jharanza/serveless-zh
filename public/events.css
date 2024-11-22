@@ -145,12 +145,12 @@
     margin: 5px 0;
 }
 
-.eventList {
+/* .eventList {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 .no-events-message {
     width: 100%;
