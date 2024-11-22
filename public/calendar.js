@@ -194,13 +194,14 @@ function displayEvents() {
 
     const currentDate = new Date();
     const displayedEvents = new Set();
+    let hasFutureEvents = false;
 
     eventData.forEach(event => {
         const startDateTime = new Date(event.fieldData['start-date-time']);
         const uniqueKey = event.fieldData.id || `${event.fieldData.name}-${startDateTime}`;
 
         if (startDateTime >= currentDate && !displayedEvents.has(uniqueKey)) {
-            hasFutureEvents = true;
+            let hasFutureEvents = true;
             displayedEvents.add(uniqueKey);
 
             const eventElement = document.createElement('div');
