@@ -55,12 +55,13 @@ function displayEvents() {
     // Mostrar el evento encontrado usando displayEventInfo
     if (closestEvent) {
         displayEventInfo(closestEvent);
-    } else {
-        const noEventsMessage = document.createElement('div');
-        noEventsMessage.classList.add('no-events-message');
-        noEventsMessage.textContent = 'Stay tuned. More events to come!';
-        eventContainer.appendChild(noEventsMessage);
-    }
+    } 
+    // else {
+    //     const noEventsMessage = document.createElement('div');
+    //     noEventsMessage.classList.add('no-events-message');
+    //     noEventsMessage.textContent = 'Stay tuned. More events to come!';
+    //     eventContainer.appendChild(noEventsMessage);
+    // }
 }
 
 

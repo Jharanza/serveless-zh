@@ -200,6 +200,7 @@ function displayEvents() {
         const uniqueKey = event.fieldData.id || `${event.fieldData.name}-${startDateTime}`;
 
         if (startDateTime >= currentDate && !displayedEvents.has(uniqueKey)) {
+            hasFutureEvents = true;
             displayedEvents.add(uniqueKey);
 
             const eventElement = document.createElement('div');
@@ -224,6 +225,13 @@ function displayEvents() {
             eventContainer.appendChild(eventElement);
         }
     });
+
+    if (!hasFutureEvents) {
+        const noEventsMessage = document.createElement('div');
+        noEventsMessage.classList.add('no-events-message');
+        noEventsMessage.textContent = 'Stay tuned. More events to come!';
+        eventContainer.appendChild(noEventsMessage);
+    }
 }
 
 
