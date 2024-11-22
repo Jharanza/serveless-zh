@@ -201,7 +201,7 @@ function displayEvents() {
         const uniqueKey = event.fieldData.id || `${event.fieldData.name}-${startDateTime}`;
 
         if (startDateTime >= currentDate && !displayedEvents.has(uniqueKey)) {
-            let hasFutureEvents = true;
+            hasFutureEvents = true;
             displayedEvents.add(uniqueKey);
 
             const eventElement = document.createElement('div');
