@@ -214,6 +214,11 @@
     .data-event >.title-place {
         font-size: 1.3rem;
     }
+
+    .no-events-message {
+        font-size: 1.5rem;
+        padding: 30px 0 50px 0;
+    }
 }
 
 
@@ -274,6 +279,11 @@
     {
         font-size: 1rem;
     }
+
+    .no-events-message {
+        font-size: 1rem;
+        padding: 20px 0 40px 0;
+    }
 }
 
 
@@ -322,6 +332,11 @@
     .data-event > .data-description h1
     {
         font-size: 0.9rem;
+    }
+
+    .no-events-message {
+        font-size: 0.8rem;
+        padding: 20px 0 30px 0;
     }
 }
 
@@ -381,6 +396,11 @@
 
     .data-event > .data-description {
         font-size: 0.65rem;
+    }
+
+    .no-events-message {
+        font-size: 0.6rem;
+        padding: 10px 0 30px 0;
     }
 
 }
