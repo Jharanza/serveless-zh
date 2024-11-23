@@ -159,7 +159,7 @@
     align-items: center;
     font-family: 'Voyage';
     font-size: 2rem;
-    padding: 40px 0 70px 0;
+    padding: 40px 0 100px 0;
 
 }
 
@@ -217,7 +217,7 @@
 
     .no-events-message {
         font-size: 1.5rem;
-        padding: 30px 0 50px 0;
+        padding: 30px 0 80px 0;
     }
 }
 
